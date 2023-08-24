@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS personagem;
+DROP TABLE IF EXISTS planeta;
+
+DROP DATABASE starwars;
