@@ -4,12 +4,10 @@ INSERT INTO
 VALUES
     (1000, 'Carlos');
 
-
 INSERT INTO
     personagem (id, nome, altura)
 VALUES
     (1001, 'Daniel', 1.83);
-
 
 INSERT INTO
     personagem (id, nome)
@@ -20,3 +18,9 @@ VALUES
 ;
 
 SELECT * FROM personagem;
+
+DELETE FROM personagem
+WHERE id >= 1003;
+
+DELETE FROM personagem
+WHERE altura IS NULL;
