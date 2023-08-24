@@ -19,3 +19,9 @@ SELECT id, nome, habitado FROM planeta WHERE id % 2 = 0;
 
 -Impar
 SELECT id, nome, habitado FROM planeta WHERE id % 2 = 1;
+
+--Par
+SELECT id, nome, habitado FROM planeta WHERE not id % 2;
+
+-Impar
+SELECT id, nome, habitado FROM planeta WHERE !id % 2;
