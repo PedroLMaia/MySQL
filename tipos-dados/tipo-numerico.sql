@@ -13,7 +13,10 @@ INSERT INTO aluno
 VALUES(
     '202106A6F7', -- matricula, 
     'Marlos Pinheiro Borges', -- nome
-    'Marlin' -- nome_social
+    'Marlin', -- nome_social
+    3, -- semestre
+    56, -- creditos_cursados
+    8.7 -- media_geral
 );
 
 SELECT * FROM aluno;
