@@ -49,23 +49,37 @@ VALUES(
     }'-- sumario_diciplina
 );
 
-SELECT * FROM aluno;
-
-
-{
-   "semestres":[
-      {
-         "numero":1,
-         "disciplinas":[
+INSERT INTO aluno
+VALUES(
+    '202106A6F7', -- matricula, 
+    'Marlos Pinheiro Borges', -- nome
+    'Marlin', -- nome_social
+    3, -- semestre
+    56, -- creditos_cursados
+    8.7, -- media_geral
+    '2021-02-10', -- data_ingresso
+    NULL, -- data_conclusao
+    'masculino', -- sexo
+    'noturno', -- periodo
+    'Banco de Dados,Desenvolvimento', -- areas_interesse
+    true, -- bolsista
+    '{
+        "semestres":[
             {
-               "nome":"Calculo 1",
-               "mediaFinal":"7.9"
-            },
-            {
-               "nome":"Algoritimo",
-               "mediaFinal":"9.3"
+                "numero":1,
+                "disciplinas":[
+                    {
+                        "nome":"Calculo 2",
+                        "mediaFinal":"7.9"
+                    },
+                    {
+                        "nome":"Algoritimo",
+                        "mediaFinal":"9.3"
+                    }
+                ]
             }
-         ]
-      }
-   ]
-}
+        ]
+    }'-- sumario_diciplina
+);
+
+SELECT * FROM aluno;
