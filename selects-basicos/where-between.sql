@@ -3,8 +3,9 @@ SELECT
 FROM
     aula
 WHERE
-    duracao <= 60
-    AND duracao >= 1;
+    duracao <= 55
+    AND duracao >= 39
+    AND nome = 'Conclusão do Módulo'; 
 
 
 SELECT
@@ -12,4 +13,4 @@ SELECT
 FROM
     aula
 WHERE
-    duracao BETWEEN 1 AND 60;
+    duracao BETWEEN 39 AND 55 AND nome = 'Conclusão do Módulo';
