@@ -16,17 +16,21 @@ CREATE TABLE IF NOT EXISTS postagem (
 );
 
 INSERT INTO usuario
+(nome, email)
 VALUES
-    (1, 'Thiago', 'Thiago@gamil.com'),
-    (2, 'Maria', 'Maria@gamil.com'),
-    (3, 'João', 'João@gamil.com');
+    ('Thiago', 'Thiago@gamil.com');
 
-SELECT * FROM usuario;
+
 
 INSERT INTO postagem
+(titulo, conteudo, id_usuario)
 VALUES
-    (1, 'Título 1', 'Conteúdo 1', 3),
-    (2, 'Título 2', 'Conteúdo 2', 1),
-    (3, 'Título 3', 'Conteúdo 3', 2);
+    (
+    'Tipos de Joins',
+    'INNER, LEFT, RIGHT, SEMI, ANTI ... JOINs',
+    1
+);
 
+
+SELECT * FROM usuario;
 SELECT * FROM postagem;
